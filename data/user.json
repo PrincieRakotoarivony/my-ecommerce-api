@@ -1,0 +1,20 @@
+{
+    "1": {
+        "id": 1,
+        "username": "princie",
+        "password_hash": "$2y$13$W0RkWy6upn4roTFkMbSiB.vDGbecovuEWUxs4MJFyRHlHnlNigiP2",
+        "auth_token": null
+    },
+    "2": {
+        "id": 2,
+        "username": "eudoxie",
+        "password_hash": "$2y$13$j945xIlUaEuJjbmtl5P1P.NNS3OddrakCa6A1K4IVsM\/srC\/Q8Cu6",
+        "auth_token": null
+    },
+    "3": {
+        "id": 3,
+        "username": "mialy",
+        "password_hash": "$2y$13$heYg28pDwze6vpK9MyIx1OeunYfCWyC.vz1HqsjLIpV6Bm0Ng8rCi",
+        "auth_token": null
+    }
+}
