@@ -18,7 +18,8 @@ class AuthController extends Controller{
             'verbs' => [
                 'class' => VerbFilter::class,
                 'actions' => [
-                    'login' => ['post', 'register'], //login and register must be only accessible with post method
+                    'login' => ['post'], //login and register must be only accessible with post method
+                    'register' => ['post'] 
                 ],
             ],
         ];
