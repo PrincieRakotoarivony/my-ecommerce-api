@@ -31,8 +31,11 @@ class AuthController extends Controller{
     
     public function actionLogin()
     {
+        $rawData = Yii::$app->request->getRawBody();
+        $jsonData = json_decode($rawData, true);
+
         $model = new UserDto; // use default scenario
-        $model->load(Yii::$app->request->post(), '');
+        $model->load($jsonData, '');
 
         if (!$model->validate()) {
             
@@ -46,8 +49,11 @@ class AuthController extends Controller{
 
     public function actionRegister()
     {
+        $rawData = Yii::$app->request->getRawBody();
+        $jsonData = json_decode($rawData, true);
+
         $model = new UserDto(['scenario' => UserDto::SCENARIO_REGISTER]); // use the scenario register for data validation
-        $model->load(Yii::$app->request->post(), '');
+        $model->load($jsonData, '');
 
         if (!$model->validate()) {
             
